@@ -1,0 +1,6 @@
+<h2>Lista</h2>
+<div *ngFor="let album of albuns, index as id">
+  <a [routerLink]="['/album', id]">
+    {{album.title}}
+  </a>
+</div>
